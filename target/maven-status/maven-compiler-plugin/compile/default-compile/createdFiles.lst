@@ -1,2 +1,5 @@
-com\Equipo4App\App.class
+com\Equipo4App\Contador.class
+com\Equipo4App\ArithmeticDemo.class
 com\Equipo4App\PruebaAtributos.class
+com\Equipo4App\App.class
+com\Equipo4App\UtilMath.class
