@@ -1,13 +1,13 @@
 package com.Equipo4App;
 
 public class Marcapasos {
-    int idDispositivo;
-    String codigoFabricante;
-    int latidosPorMinuto;
-    int nivelBateria;
+    int idDispositivo;  // 4 bytes
+    String codigoFabricante; // Suponiendo 3 caracteres de codigo =
+    int latidosPorMinuto; // 4 bytes
+    int nivelBateria; // 4 bytes
     private static int contadorInstancias = 0;
 
-    public Marcapasos(int idDispositivo, String codigoFabricante, int latidosPorMinuto, int nivelBateria) {
+    public Marcapasos(String codigoFabricante, int latidosPorMinuto, int nivelBateria) {
         this.idDispositivo = contadorInstancias;
         this.codigoFabricante = codigoFabricante;
         this.latidosPorMinuto = latidosPorMinuto;
@@ -40,6 +40,7 @@ public class Marcapasos {
         return nivelBateria;
     }
 
+
     public String toString() {
         return "Marcapasos{" +
             "idDispositivo=" + idDispositivo +
@@ -48,5 +49,4 @@ public class Marcapasos {
             ", nivelBateria=" + nivelBateria +
             '}';
     }
-
 }
