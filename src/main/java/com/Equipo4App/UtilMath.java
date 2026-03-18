@@ -9,15 +9,15 @@ public class UtilMath{
      - negativos: no definido → se retorna -1
      - valores grandes pueden desbordar int
     */
-    public static int factorial (int num){
-        if (num < 0) return -1;
-        if (num == 0 || num == 1) return 1;
+    public static void factorial (int num){
+        if (num < 0) System.out.println("-1");
+        if (num == 0 || num == 1) System.out.println("1");
 
         int resultado = 1;
         for (int i = 2; i <= num; i++){
             resultado = resultado * i;
         }
-        return resultado;
+        System.out.println("El resultado de !" + num + " es: " + resultado);
     }
 
     public static boolean esPrimo(int num){
@@ -30,7 +30,7 @@ public class UtilMath{
     }
 
     // suma de pares con WHILE
-    public static int sumaPares(int num){
+    public static void sumaPares(int num){
         int suma = 0;
         int i = 0;
         while(i <= num){
@@ -39,11 +39,11 @@ public class UtilMath{
             }
             i++;
         }
-        return suma;
+        System.out.println(suma);
     }
 
     // suma de impares con WHILE
-    public static int sumaImpares(int num){
+    public static void sumaImpares(int num){
         int suma = 0;
         int i = 0;
         while(i <= num){
@@ -52,15 +52,15 @@ public class UtilMath{
             }
             i++;
         }
-        return suma;
+        System.out.println(suma);
     }
 
     // metodo reutilizable que decide
-    public static int sumaSegunPrimo(int num){
+    public static void sumaSegunPrimo(int num){
         if(esPrimo(num)){
-            return sumaPares(num);
+            sumaPares(num);
         }else{
-            return sumaImpares(num);
+            sumaImpares(num);
         }
     }
 }

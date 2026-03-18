@@ -2,7 +2,7 @@ package com.Equipo4App;
 
 public class Marcapasos {
     int idDispositivo;  // 4 bytes
-    String codigoFabricante; // Suponiendo 3 caracteres de codigo =
+    String codigoFabricante; //
     int latidosPorMinuto; // 4 bytes
     int nivelBateria; // 4 bytes
     private static int contadorInstancias = 0;
