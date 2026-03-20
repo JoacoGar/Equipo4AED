@@ -7,6 +7,8 @@ Integrantes:
 
 Objetivo: Unidad Tematica 0 - Transición a JAVA
 
+### Ejercicio 1:
+
 ### Resumen JDK 
 Es el conjunto de programas y librerías que permiten desarrollar, compilar, ejecutar y debuggear programas en Java.
 
@@ -26,8 +28,7 @@ El Java Runtime Environment es el conjunto de componentes que se precisan para c
 | char         | x        |               |
 | String       |          | x             |
 
-### -------------------------------------------------------------------------------------------------------------------------------------
-### Ejercicio 9
+### Ejercicio 9:
 
 ### Glosario
 

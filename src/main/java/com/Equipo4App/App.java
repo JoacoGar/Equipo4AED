@@ -119,5 +119,38 @@ public class App
         ResultadoAnalisis analisis = new ResultadoAnalisis(resultado4);
         System.out.println(analisis);
 
+        System.out.println( "------------------ Ejercicio 10 ------------------" );
+
+        ContadorPalabras cp = new ContadorPalabras();
+
+        // Prueba con lineas simulando archivo
+        String[] lineas = {
+                "Este es un texto de prueba",
+                "para contar palabras en varias lineas"
+        };
+
+        System.out.println("Lineas:");
+        for (String l : lineas) {
+            System.out.println(l);
+        }
+
+        int total = cp.contarPalabras(lineas);
+        System.out.println("Total de palabras: " + total);
+
+        // Prueba de palabras comunes
+        String[] palabras1 = {"java", "codigo", "archivo"};
+        String[] palabras2 = {"codigo", "texto", "archivo"};
+
+        System.out.println("Palabras comunes (arreglo):");
+        String[] comunes1 = cp.palabrasComunes(palabras1, palabras2);
+        for (String s : comunes1) {
+            System.out.println(s);
+        }
+
+        System.out.println("Palabras comunes (colecciones):");
+        String[] comunes2 = cp.palabrasComunesSet(palabras1, palabras2);
+        for (String s : comunes2) {
+            System.out.println(s);
+        }
     }
 }
