@@ -82,8 +82,42 @@ public class App
 
 
 
+        System.out.println( "------------------ Ejercicio 9 ------------------" );
+        ContadorPalabras contadorPalabras = new ContadorPalabras();
 
+        String texto1 = "Este texto tiene varias palabras";
+        System.out.println("Texto: " + texto1);
+        int resultado1 = contadorPalabras.contarPalabras(texto1);
+        System.out.println("Cantidad de palabras: " + resultado1);
 
+        String texto2 = "  Contador   de palabras  ";
+        System.out.println("Texto: " + texto2);
+        int resultado2 = contadorPalabras.contarPalabras(texto2);
+        System.out.println("Cantidad de palabras: " + resultado2);
+
+        String texto3 = "   ";
+        System.out.println("Texto: " + texto3);
+        int resultado3 = contadorPalabras.contarPalabras(texto3);
+        System.out.println("Cantidad de palabras: " + resultado3);
+
+        ContadorPalabras contadorUnicas = new ContadorPalabrasUnicas();
+
+        String texto4 = "palabra palabra contador contador";
+        System.out.println("Texto: " + texto4);
+        int resultado4 = contadorUnicas.contarPalabras(texto4);
+        System.out.println("Palabras únicas: " + resultado4);
+
+        String t1 = "contador de palabras";
+        String t2 = "prueba de funcionamiento";
+
+        System.out.println("Texto 1: " + t1);
+        System.out.println("Texto 2: " + t2);
+
+        int resultado5 = contadorPalabras.contarPalabras(t1, t2);
+        System.out.println("Suma de palabras: " + resultado5);
+
+        ResultadoAnalisis analisis = new ResultadoAnalisis(resultado4);
+        System.out.println(analisis);
 
     }
 }
