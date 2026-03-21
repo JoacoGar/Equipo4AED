@@ -69,3 +69,7 @@ Se da cuando un método tiene el mismo nombre pero distintos parámetros.
 **Sobrescritura:**
 Se da cuando una clase hija redefine un método heredado.
 **Ejemplo:** ContadorPalabrasUnicas sobrescribe contarPalabras de ContadorPalabras.
+
+### Explicación del ejercicio 13
+
+Se propone primero un enum con los resultados para un partido de futbol, y se muestran recorriendolos con un for, luego en la clase Enumerados se hacen los métodos para contar vocales y consonantes en un String utilizando enum, que en caso de querer agregar nuevos tipos de caracteres a clasificar facilita la tarea dada la separación de responsabilidades en los métodos.
