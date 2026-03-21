@@ -2,7 +2,7 @@ package com.Equipo4App;
 
 import java.util.ArrayList;
 
-public class ContadorPalabrasUnicas extends ContadorPalabras {
+public class  ContadorPalabrasUnicas extends ContadorPalabras {
 
     @Override
     public int contarPalabras(String texto) {

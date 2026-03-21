@@ -152,5 +152,18 @@ public class App
         for (String s : comunes2) {
             System.out.println(s);
         }
+
+        System.out.println( "------------------ Ejercicio 13 ------------------" );
+        enum Resultado {
+            VICTORIA, EMPATE, RESULTADO
+        }
+
+        for (Resultado e : Resultado.values()) {
+            System.out.println(e);
+        }
+
+        Enumerados pruebaContarVocales = new Enumerados();
+
+        pruebaContarVocales.contar("aaeeioumlss");
     }
 }
