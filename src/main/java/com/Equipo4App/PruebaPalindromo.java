@@ -75,7 +75,7 @@ public class PruebaPalindromo {
         System.out.println("replaceAll('[aeiou]', '*'): " + texto.replaceAll("[aeiou]", "*"));
         System.out.println("replaceFirst('a', '*'): " + texto.replaceFirst("a", "*"));
 
-        System.out.println("\n--- MICROCONSULTAS (hannah) ---");
+        System.out.println("\n--- MICROCONSULTAS ---");
 
         System.out.println("Frase: " + hannah);
         System.out.println("Longitud: " + hannah.length());
