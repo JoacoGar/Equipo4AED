@@ -30,6 +30,14 @@ public class App
         Marcapasos marcapasos = new Marcapasos("JHSYU7", 78, 100);
         System.out.println(marcapasos.toString());
 
+        System.out.println( "------------------ Ejercicio 7 ------------------" );
+
+        /* Para detectar correctamente los palíndromos, es necesario ignorar mayúsculas, tildes y signos de puntuación.
+        Por ejemplo, la frase "¿Acaso hubo búhos acá?" es un palíndromo, pero solo si se eliminan los signos y se normalizan las letras.
+        */
+
+        PruebaPalindromo.prueba();
+
         System.out.println( "------------------ Ejercicio 8 ------------------" );
         /* Un StringBuilder es una clase que permite construir y modificar
          cadenas de texto sin crear nuevos objetos cada vez que se realiza un cambio.

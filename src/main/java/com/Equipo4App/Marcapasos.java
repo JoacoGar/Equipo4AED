@@ -2,10 +2,11 @@ package com.Equipo4App;
 
 public class Marcapasos {
     int idDispositivo;  // 4 bytes
-    String codigoFabricante; //
+    String codigoFabricante; // Suponiendo 3 digitos = 40 bytes de sobrecarga (cabecera, aprox) + 2(lo que ocupa cada char) * 3 (cant de chars) = 46 bytes
     int latidosPorMinuto; // 4 bytes
     int nivelBateria; // 4 bytes
-    private static int contadorInstancias = 0;
+    private static int contadorInstancias = 0; // 4 bytes
+    // Total = 62 bytes
 
     public Marcapasos(String codigoFabricante, int latidosPorMinuto, int nivelBateria) {
         this.idDispositivo = contadorInstancias;
