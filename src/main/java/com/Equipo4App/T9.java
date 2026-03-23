@@ -2,6 +2,8 @@ package com.Equipo4App;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -36,11 +38,12 @@ public class T9 {
             ArrayList<String> lineasTraducidas = new ArrayList<>();
 
             while (linea != "") {
+                linea = new StringBuilder(linea).reverse().toString();
                 ArrayList<String> letrasTraducidas = new ArrayList<>();
                 for (char c : linea.toLowerCase().toCharArray()) {
                     letrasTraducidas.add(traducir(c));
                 }
-                lineasTraducidas.add(String.join(" ", letrasTraducidas));
+                lineasTraducidas.add(String.join(" \n ", letrasTraducidas));
                 linea = sc.next();
             }
 
@@ -51,6 +54,20 @@ public class T9 {
         } catch (Exception e) {
             System.out.println("Error en el formato de los datos.");
         }
-        return 
+
+        return "";
+    }
+
+    public static void escribirArchivo(String rutaArchivo, String contenido) {
+        try (FileWriter writer = new FileWriter("archivo.txt")) {
+            writer.write(contenido);
+        } catch (IOException e) {
+            System.out.println("Error al escribir: " + e.getMessage());
+        }
+    }
+
+    public static void transformacionT9(String rutaEntrada, String rutaSalida) {
+        String contenido = leerArchivo(rutaEntrada);
+        escribirArchivo(rutaSalida, contenido);
     }
 }
