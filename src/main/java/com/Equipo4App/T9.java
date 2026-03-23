@@ -20,37 +20,37 @@ public class T9 {
                 for (int i = 0; i < cantPulsaciones; i++) {
                     resultado += numeroTeclado;
                 }
-                return resultado + " ";
+                return resultado;
             }
         }
 
         return "";
     }
 
-    public static String leerArchivo (String rutaArchivo){
+    public static String leerArchivo (String rutaArchivo) {
         try {
             File archivo = new File(rutaArchivo);
             Scanner sc = new Scanner(archivo);
 
             String linea = sc.next();
-            ArrayList<ArrayList> lineasTraducidas = new ArrayList<>();
+            ArrayList<String> lineasTraducidas = new ArrayList<>();
 
             while (linea != "") {
                 ArrayList<String> letrasTraducidas = new ArrayList<>();
                 for (char c : linea.toLowerCase().toCharArray()) {
                     letrasTraducidas.add(traducir(c));
                 }
-                lineasTraducidas.add(letrasTraducidas);
+                lineasTraducidas.add(String.join(" ", letrasTraducidas));
                 linea = sc.next();
             }
 
-            return 
+            return String.join(" ", lineasTraducidas);
 
         } catch (FileNotFoundException e) {
             System.out.println("Error: archivo no encontrado.");
         } catch (Exception e) {
             System.out.println("Error en el formato de los datos.");
         }
-    }
+        return 
     }
 }
