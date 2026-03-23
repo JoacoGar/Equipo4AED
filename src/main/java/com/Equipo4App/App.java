@@ -173,5 +173,9 @@ public class App
         Enumerados pruebaContarVocales = new Enumerados();
 
         pruebaContarVocales.contar("aaeeioumlss");
+
+        System.out.println( "------------------ Ejercicio 14 ------------------" );
+
+        T9.transformacionT9("entrada T9.txt", "salida T9.txt");
     }
 }
